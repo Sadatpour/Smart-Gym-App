@@ -3,134 +3,250 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Smart Gym - Weight measurement form</title>
-    <link rel="stylesheet" href="./build/tailwind.css" />
+    <link rel="stylesheet" href="../public/build/tailwind.css" />
+    <title>Smart Gym app</title>
   </head>
-  <body>
-    <!-- header section -->
-    <header class="w-full h-32 bg-smartgymprimary">
-        <div class="text-sm font-bold text-white flex gap-4 py-6 px-4">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"     stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
-              <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+  <body class="bg-smartgymprimary pt-2">
+    <!-- Smart Gym Header  -->
+     <div
+      class="flex  justify-items-stretch items-center gap-10 my-10 mx-4"
+    >
+      <div class="flex  w-2/3 gap-2">
+        <img
+          class="w-12 h-12"
+          src="../assets/images/avatar.png"
+          alt="Customer Avatar"
+        />
+        <div class="text-white">
+          <div class="flex  gap-1 items-center">
+            <h1>صدرا رهبر</h1>
+            <svg
+              width="29"
+              height="29"
+              viewBox="0 0 26 26"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_808_1019)">
+                <path
+                  d="M5.57045 9.78983C6.03788 9.56416 6.60587 9.76228 6.83154 10.2297L8.61492 13.9236C8.68987 14.0788 8.87754 14.1443 9.03278 14.0693C9.19141 13.9928 9.25774 13.8026 9.1836 13.649L6.57819 8.25249C6.35089 7.78169 6.54726 7.2187 7.01807 6.9914C7.4855 6.76573 8.05187 6.96047 8.27917 7.43128L10.61 12.2591C10.685 12.4144 10.8743 12.479 11.0279 12.4049C11.1865 12.3283 11.2537 12.1398 11.1787 11.9846L8.57329 6.58804C8.34762 6.12061 8.54236 5.55425 9.01317 5.32695C9.48398 5.09965 10.0486 5.2994 10.2743 5.76683L12.8797 11.1634C12.9546 11.3186 13.144 11.3833 13.3026 11.3067C13.4578 11.2317 13.5233 11.0441 13.4484 10.8888L11.3921 6.62963C11.1648 6.15883 11.3645 5.59421 11.8319 5.36854C12.3027 5.14123 12.8657 5.33761 13.093 5.80842L16.5205 12.9076L16.9104 10.7759C16.9979 10.0865 17.5789 9.58753 18.2115 9.65664C18.8458 9.72913 19.2891 10.3412 19.2057 11.0306C19.2057 11.0306 18.7052 14.7306 18.4939 16.3142C18.285 17.8986 17.4571 19.4594 15.0626 20.6154C11.0987 22.5292 9.26482 19.64 8.82325 18.7254L5.12045 11.0558C4.90071 10.5834 5.09964 10.0171 5.57045 9.78983Z"
+                  fill="white"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_808_1019">
+                  <rect
+                    width="18.7385"
+                    height="18.7385"
+                    fill="white"
+                    transform="matrix(-0.90054 0.434773 0.434773 0.90054 17.353 0)"
+                  />
+                </clipPath>
+              </defs>
             </svg>
-            <p> اندازه گیری جدید</p>
+          </div>
+
+          <p class="text-sm">
+            به باشگاه <span class="text-smartgymyellow"> اونیکس </span> خوش
+            آمدید
+          </p>
         </div>
-        <div class= "w-full h-24 bg-smartgymprimarydark rounded-t-3xl px-8 flex justify-center items-center gap-4">
-            <div class="w-1/2 flex gap-2 justify-center items-center pb-4">
-                <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M18.0728 2.16364H14.6728V0H13.4364V2.16364H6.01823V0H4.78186V2.16364H1.38186C1.13602 2.16392 0.900333 2.26171 0.726498 2.43554C0.552663 2.60938 0.454876 2.84507 0.45459 3.09091V16.0727C0.454876 16.3186 0.552663 16.5543 0.726498 16.7281C0.900333 16.9019 1.13602 16.9997 1.38186 17H18.0728C18.3186 16.9997 18.5543 16.9019 18.7281 16.7281C18.902 16.5543 18.9998 16.3186 19 16.0727V3.09091C18.9998 2.84507 18.902 2.60938 18.7281 2.43554C18.5543 2.26171 18.3186 2.16392 18.0728 2.16364ZM17.7637 15.7636H1.69095V3.4H4.78186V4.94545H6.01823V3.4H13.4364V4.94545H14.6728V3.4H17.7637V15.7636Z" fill="#E7FE58"/>
-                  <path d="M5.39994 7.10938H4.16357V8.34574H5.39994V7.10938Z" fill="#E7FE58"/>
-                  <path d="M8.79984 7.10938H7.56348V8.34574H8.79984V7.10938Z" fill="#E7FE58"/>
-                  <path d="M11.8909 7.10938H10.6545V8.34574H11.8909V7.10938Z" fill="#E7FE58"/>
-                  <path d="M15.2911 7.10938H14.0547V8.34574H15.2911V7.10938Z" fill="#E7FE58"/>
-                  <path d="M5.39994 9.89062H4.16357V11.127H5.39994V9.89062Z" fill="#E7FE58"/>
-                  <path d="M8.79984 9.89062H7.56348V11.127H8.79984V9.89062Z" fill="#E7FE58"/>
-                  <path d="M11.8909 9.89062H10.6545V11.127H11.8909V9.89062Z" fill="#E7FE58"/>
-                  <path d="M15.2911 9.89062H14.0547V11.127H15.2911V9.89062Z" fill="#E7FE58"/>
-                  <path d="M5.39994 12.6729H4.16357V13.9092H5.39994V12.6729Z" fill="#E7FE58"/>
-                  <path d="M8.79984 12.6729H7.56348V13.9092H8.79984V12.6729Z" fill="#E7FE58"/>
-                  <path d="M11.8909 12.6729H10.6545V13.9092H11.8909V12.6729Z" fill="#E7FE58"/>
-                  <path d="M15.2911 12.6729H14.0547V13.9092H15.2911V12.6729Z" fill="#E7FE58"/>
-                </svg>
-                <p class="text-white">تاریخ: <span class="text-smartgymyellow">۱۴۰۳/۰۲/۱۰</span></p>
-            </div>
-            <div class="w-1/2 flex gap-2 justify-center items-center pb-4">
-                <svg width="19" height="19" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M8.51686 3.15039H7.4502V9.08742L11.304 10.919L11.7619 9.95562L8.51686 8.41336V3.15039Z" fill="#E7FE58"/>
-                  <path d="M8 0.5C3.58173 0.5 0 4.08173 0 8.5C0 12.9183 3.58173 16.5 8 16.5C12.4183 16.5 16 12.9183 16 8.5C16 4.08173 12.4183 0.5 8 0.5ZM8 15.4333C4.17083 15.4333 1.06667 12.3292 1.06667 8.5C1.06667 4.67083 4.17083 1.56667 8 1.56667C11.8292 1.56667 14.9333 4.67083 14.9333 8.5C14.9333 12.3292 11.8292 15.4333 8 15.4333Z" fill="#E7FE58"/>
-                </svg>
-                <p class="text-white">ساعت: <span class="text-smartgymyellow">۱۱:۰۰</span></p>
-            </div>
-        </div>
-    </header>
-    <!-- body section -->
-    <div class="w-full h-max rounded-3xl bg-white p-6 mt-4 mb-10 ">
-        <form class="flex flex-col justify-center items-center " action="">
-            <div class="flex gap-4">
-                <div class="my-2">
-                  <label class="px-2 font-bold text-lg " for="fname">قد:</label>
-                  <div class=" mt-1"><input class="rounded-md py-3 bg-smartgymlight/20 border-2 border-gray-100" type="text" id="fname" name="fname" value="">
-                  </div>
-                </div>
-                <div class="my-2">
-                  <label class="px-2 font-bold text-lg " for="fname">وزن:</label>
-                  <div class=" mt-1"><input class="rounded-md py-3 bg-smartgymlight/20 border-2 border-gray-100" type="text" id="fname" name="fname" value="">
-                  </div>
-                 </div>
-            </div>
-            <div class="flex gap-4">
-                <div class="my-2">
-                  <label class="px-2 font-bold text-lg " for="fname">دور گردن:</label>
-                  <div class=" mt-1"><input class="rounded-md py-3 bg-smartgymlight/20 border-2 border-gray-100" type="text" id="fname" name="fname" value="">
-                  </div>
-                </div>
-                <div class="my-2">
-                  <label class="px-2 font-bold text-lg " for="fname">دور شانه:</label>
-                  <div class=" mt-1"><input class="rounded-md py-3 bg-smartgymlight/20 border-2 border-gray-100" type="text" id="fname" name="fname" value="">
-                  </div>
-                 </div>
-            </div>
-            <div class="flex gap-6">
-                <div class="my-2">
-                  <label class="px-2 font-bold text-lg " for="fname">دور سینه:</label>
-                  <div class=" mt-1"><input class="rounded-md py-3 bg-smartgymlight/20 border-2 border-gray-100 w-32" type="text" id="fname" name="fname" value="">
-                  </div>
-                </div>
-                <div class="my-2 ">
-                  <label class="px-2 font-bold text-lg " for="fname">دور شکم:</label>
-                  <div class=" mt-1"><input class="rounded-md py-3 bg-smartgymlight/20 border-2 border-gray-100 w-32" type="text" id="fname" name="fname" value="">
-                  </div>
-                 </div>
-                 <div class="my-2">
-                  <label class="px-2 font-bold text-lg " for="fname">دور لگن:</label>
-                  <div class=" mt-1"><input class="rounded-md py-3 bg-smartgymlight/20 border-2 border-gray-100 w-32" type="text" id="fname" name="fname" value="">
-                  </div>
-                 </div>
-            </div>
-            <div class="flex gap-4">
-                <div class="my-2">
-                  <label class="px-2 font-bold text-lg " for="fname">دور بازو راست:</label>
-                  <div class=" mt-1"><input class="rounded-md py-3 bg-smartgymlight/20 border-2 border-gray-100" type="text" id="fname" name="fname" value="">
-                  </div>
-                </div>
-                <div class="my-2">
-                  <label class="px-2 font-bold text-lg " for="fname">دور بازو چپ:</label>
-                  <div class=" mt-1"><input class="rounded-md py-3 bg-smartgymlight/20 border-2 border-gray-100" type="text" id="fname" name="fname" value="">
-                  </div>
-                 </div>
-            </div>
-            <div class="flex gap-4">
-                <div class="my-2">
-                  <label class="px-2 font-bold text-lg " for="fname">دور ران راست:</label>
-                  <div class=" mt-1"><input class="rounded-md py-3 bg-smartgymlight/20 border-2 border-gray-100" type="text" id="fname" name="fname" value="">
-                  </div>
-                </div>
-                <div class="my-2">
-                  <label class="px-2 font-bold text-lg " for="fname">دور ران چپ:</label>
-                  <div class=" mt-1"><input class="rounded-md py-3 bg-smartgymlight/20 border-2 border-gray-100" type="text" id="fname" name="fname" value="">
-                  </div>
-                 </div>
-            </div>
-            <div class="flex gap-4">
-                <div class="my-2">
-                  <label class="px-2 font-bold text-lg " for="fname">دور ساق راست:</label>
-                  <div class=" mt-1"><input class="rounded-md py-3 bg-smartgymlight/20 border-2 border-gray-100" type="text" id="fname" name="fname" value="">
-                  </div>
-                </div>
-                <div class="my-2">
-                  <label class="px-2 font-bold text-lg " for="fname">دور ساق چپ:</label>
-                  <div class=" mt-1"><input class="rounded-md py-3 bg-smartgymlight/20 border-2 border-gray-100" type="text" id="fname" name="fname" value="">
-                  </div>
-                 </div>
-            </div>
-          <input class="bg-smartgymprimarydark rounded-full py-4 text-white text-xl my-4 w-full" type="submit" value="ثبت اطلاعات">
-        </form> 
+      </div>
+      <div class="flex  w-1/3 justify-center gap-6">
+        <svg
+          width="30"
+          height="30"
+          viewBox="0 0 25 25"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M18.5 8.51086C18.5 6.91957 17.8679 5.39344 16.7426 4.26822C15.6174 3.14301 14.0913 2.51086 12.5 2.51086C10.9087 2.51086 9.38258 3.14301 8.25736 4.26822C7.13214 5.39344 6.5 6.91957 6.5 8.51086C6.5 15.5109 3.5 17.5109 3.5 17.5109H21.5C21.5 17.5109 18.5 15.5109 18.5 8.51086Z"
+            stroke="#6A7CBC"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M14.23 21.5109C14.0542 21.8139 13.8019 22.0655 13.4982 22.2404C13.1946 22.4153 12.8504 22.5073 12.5 22.5073C12.1496 22.5073 11.8054 22.4153 11.5018 22.2404C11.1982 22.0655 10.9458 21.8139 10.77 21.5109"
+            stroke="#6A7CBC"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+        <svg
+          width="30"
+          height="30"
+          viewBox="0 0 25 25"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M11.5 19.5109C15.9183 19.5109 19.5 15.9291 19.5 11.5109C19.5 7.09259 15.9183 3.51086 11.5 3.51086C7.08172 3.51086 3.5 7.09259 3.5 11.5109C3.5 15.9291 7.08172 19.5109 11.5 19.5109Z"
+            stroke="#6A7CBC"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M21.4999 21.5109L17.1499 17.1609"
+            stroke="#6A7CBC"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </div>
+     </div>
+    <!-- body section  -->
+     <div class="flex flex-col h-auto p-4 rounded-t-3xl bg-white md:hidden lg:hidden xl:hidden mb-14">
+    <div class="w-auto flex  gap-4 justify-between items-center mx-4 px-4 py-6 border-dashed border-2 border-smartgymprimary rounded-xl" > 
+      <div class=" flex  gap-4">
+        <svg width="29" height="28" viewBox="0 0 29 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_808_1033)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M19.8138 17.9822C19.2652 15.9434 20.883 14.9323 22.6708 14.9333C27.5055 14.9375 26.9652 14.6191 26.9621 16.7378C26.958 20.2087 27.49 19.769 24.019 19.769C21.9014 19.769 20.3147 19.8458 19.8138 17.9822ZM25.7508 21.0041C25.7529 26.3293 26.3243 25.7994 21.5301 25.7994C19.5628 25.7994 4.12759 25.9104 3.55099 25.6947C2.46107 25.285 2.82403 23.0824 2.82403 21.8193V12.797C2.82403 7.9074 1.77974 8.90295 12.5079 8.90295C15.5153 8.90295 18.5227 8.90295 21.5301 8.90295C26.456 8.90295 25.8214 8.61258 25.7477 13.7003C24.132 13.8953 22.1305 13.4358 20.6911 14.0332C17.9378 15.1739 17.692 19.2878 20.6372 20.6401C22.0663 21.2955 24.1569 20.7698 25.7508 21.0041ZM18.1877 7.69688C18.4128 7.44592 21.5851 5.59999 22.0486 5.4351L23.29 7.69481L18.1877 7.69688ZM13.4122 7.69792C13.604 7.47392 20.2483 3.5591 20.8488 3.33406L21.3943 4.36799C20.2545 5.08458 18.9583 5.81051 17.7957 6.46903C15.1181 7.98621 16.2868 7.68029 13.4122 7.69792ZM8.60966 7.67199C9.29514 7.14103 10.5873 6.48562 11.4169 6.00236C12.3637 5.45169 13.322 4.88651 14.3061 4.32755C15.2913 3.76858 16.1665 3.22932 17.1839 2.6434C18.0467 2.14666 19.4031 1.09614 20.1788 2.21925C19.8574 2.57495 15.1948 5.18725 14.7883 5.43303C13.9017 5.97021 13.0098 6.46695 12.1034 6.99895C10.8507 7.73421 10.6671 7.87732 8.60966 7.67199ZM26.9569 20.8932C28.4534 19.9184 28.1671 19.4797 28.1671 17.36C28.1671 15.3782 28.4471 14.6461 26.96 13.8144C26.9652 12.0338 27.3126 9.45881 26.2414 8.39792C25.2562 7.42103 25.0664 8.31703 24.4369 7.19288C23.5565 5.61658 21.9885 2.75229 21.1433 1.46429C20.7959 0.934361 20.1177 0.457324 19.148 0.466657C18.308 0.473916 17.6122 1.01836 17.0314 1.34918C14.4544 2.81347 11.8836 4.29021 9.35944 5.81155C8.71336 6.20044 8.10773 6.54992 7.45855 6.9191C6.52833 7.44799 6.51173 7.70725 5.2507 7.69688C3.83099 7.68547 1.74655 7.69584 1.62625 10.0966C1.56507 11.3037 1.54744 24.5477 1.69988 25.171C1.8824 25.9176 2.46418 26.5367 3.07396 26.795C3.97618 27.1776 7.6224 27.0044 8.87825 27.0044C12.9227 27.0044 16.9671 27.0044 21.0116 27.0044C22.8503 27.0044 25.2199 27.3404 26.2787 26.2567C27.294 25.2187 26.9797 22.5867 26.9569 20.8932Z" fill="#232441"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M21.8744 16.1985C20.2452 16.6227 20.9183 18.872 22.4458 18.5059C23.851 18.1689 23.3968 15.8024 21.8744 16.1985Z" fill="#232441"/>
+</g>
+<defs>
+<clipPath id="clip0_808_1033">
+<rect width="28" height="28" fill="white" transform="translate(0.5)"/>
+</clipPath>
+</defs>
+        </svg>
+        <p>  موجودی : 50,000,000 ریال</p>
+      </div>
+      <div class="">
+        <svg width="25" height="22" viewBox="0 0 25 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12.5 1.94116V20.0588" stroke="#232441" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M3.16675 11H21.8334" stroke="#232441" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+
+      </div>
+
     </div>
-     <!-- footer section  -->
-    <footer
-       class="w-full bg-white flex  items-center justify-between font-medium text-smartgymsecodary pb-4 pt-1 px-4 md:hidden lg:hidden xl:hidden mt-0 shadow-2xl shadow-slate-700"
+    <div class="flex  gap-3 my-6"> 
+        <div class=" flex  bg-smartgymprimary w-2/3 h-32 rounded-xl p-4 gap-2">
+          <div class="flex flex-col  w-2/3 h-32 rounded-xl p-1 gap-2">
+             <h1 class="text-white text-lg">  کلاس یوگا 100 جلسه</h1>
+             <p class=" text-white text-xs">  تاریخ شروع :  1403/03/15</p>
+             <p class=" text-white text-xs">  تاریخ اتمام :  1403/06/26</p>
+          </div>
+          <div class="flex justify-center items-center">
+            <svg width="70" height="70" viewBox="0 0 73 73" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_808_706)">
+               <rect width="73" height="73" rx="36.5" fill="#FFFDFD" fill-opacity="0.29"/>
+                <path d="M0 23.4783C0 23.4783 7.17758 22.3378 12.5 23.4783C19.5 24.9783 21.032 26.0325 27.6897 29.2464C32.7241 31.6768 42.5134 29.2464 42.5134 29.2464C42.5134 29.2464 56.7452 23.4783 61.5 23.4783C67.3167 23.4783 73 29.2464 73 29.2464V90.9783H0V23.4783Z" fill="white"/>
+                <path d="M0 23.4783C0 23.4783 7.17758 22.3378 12.5 23.4783C19.5 24.9783 21.032 26.0325 27.6897 29.2464C32.7241 31.6768 42.5134 29.2464 42.5134 29.2464C42.5134 29.2464 56.7452 23.4783 61.5 23.4783C67.3167 23.4783 73 29.2464 73 29.2464V90.9783H0V23.4783Z" fill="white"/>
+                <g filter="url(#filter0_d_808_706)">
+                 <path d="M0 23.4088C0 23.4088 6.64896 25.4803 12 26.4783C19 27.7838 21 27.7838 26.5 26.4783C30.9818 25.4144 34.7874 23.4088 41.5 23.4088C48.9472 23.4088 54.4149 26.7337 59.4349 27.7838C66.4487 29.251 73 23.4088 73 23.4088V90.9783H0V23.4088Z" fill="#E7FE58"/>
+                 <path d="M0 23.4088C0 23.4088 6.64896 25.4803 12 26.4783C19 27.7838 21 27.7838 26.5 26.4783C30.9818 25.4144 34.7874 23.4088 41.5 23.4088C48.9472 23.4088 54.4149 26.7337 59.4349 27.7838C66.4487 29.251 73 23.4088 73 23.4088V90.9783H0V23.4088Z" fill="#E7FE58"/>
+               </g>
+                <path d="M32.757 39.5557C32.757 40.5336 32.8524 41.4528 33.0431 42.3131C33.2339 43.1733 33.4814 43.9849 33.7857 44.7478C34.0901 45.5107 34.433 46.227 34.8144 46.8965C35.1959 47.5661 35.5794 48.1991 35.9649 48.7957L34.8631 49.4774C34.5831 49.0594 34.3275 48.6536 34.0962 48.26C33.8649 47.8623 33.6518 47.4748 33.457 47.0974C33.2623 46.72 33.0837 46.3507 32.9214 45.9896C32.7591 45.6244 32.611 45.2612 32.477 44.9C32.4324 44.7742 32.3898 44.6606 32.3492 44.5591C32.3127 44.4536 32.2782 44.3522 32.2457 44.2548C32.2173 44.1574 32.1869 44.058 32.1544 43.9565C32.122 43.851 32.0915 43.7333 32.0631 43.6035C31.8805 44.1838 31.6776 44.7641 31.4544 45.3444C31.2312 45.9246 31.004 46.4765 30.7727 47C30.5455 47.5194 30.3223 47.9942 30.1031 48.4244C29.884 48.8504 29.6852 49.2015 29.5066 49.4774L28.3988 48.7957C28.6057 48.398 28.8228 47.982 29.0501 47.5478C29.2773 47.1096 29.5005 46.6551 29.7197 46.1844C29.9428 45.7096 30.1539 45.2165 30.3527 44.7052C30.5556 44.1899 30.7341 43.6562 30.8883 43.1044C31.0466 42.5484 31.1724 41.9762 31.2657 41.3878C31.3631 40.7954 31.4179 40.1846 31.4301 39.5557H32.757ZM41.8078 39.5557C41.8078 40.5336 41.9032 41.4528 42.0939 42.3131C42.2846 43.1733 42.5322 43.9849 42.8365 44.7478C43.1409 45.5107 43.4838 46.227 43.8652 46.8965C44.2467 47.5661 44.6301 48.1991 45.0157 48.7957L43.9139 49.4774C43.6339 49.0594 43.3783 48.6536 43.147 48.26C42.9157 47.8623 42.7026 47.4748 42.5078 47.0974C42.313 46.72 42.1345 46.3507 41.9722 45.9896C41.8099 45.6244 41.6617 45.2612 41.5278 44.9C41.4832 44.7742 41.4406 44.6606 41.4 44.5591C41.3635 44.4536 41.329 44.3522 41.2965 44.2548C41.2681 44.1574 41.2377 44.058 41.2052 43.9565C41.1728 43.851 41.1423 43.7333 41.1139 43.6035C40.9313 44.1838 40.7284 44.7641 40.5052 45.3444C40.282 45.9246 40.0548 46.4765 39.8235 47C39.5962 47.5194 39.373 47.9942 39.1539 48.4244C38.9348 48.8504 38.7359 49.2015 38.5574 49.4774L37.4496 48.7957C37.6565 48.398 37.8736 47.982 38.1009 47.5478C38.3281 47.1096 38.5513 46.6551 38.7704 46.1844C38.9936 45.7096 39.2046 45.2165 39.4035 44.7052C39.6064 44.1899 39.7849 43.6562 39.9391 43.1044C40.0974 42.5484 40.2232 41.9762 40.3165 41.3878C40.4139 40.7954 40.4687 40.1846 40.4809 39.5557H41.8078Z" fill="#074D4F"/>
+               <path d="M27.4492 53.2391H45.5452V53.8478H27.4492V53.2391Z" fill="#074D4F"/>
+              </g>
+                <defs>
+                  <filter id="filter0_d_808_706" x="-11" y="9.40881" width="95" height="89.5695" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                     <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                       <feOffset dy="-3"/>
+                     <feGaussianBlur stdDeviation="5.5"/>
+                         <feComposite in2="hardAlpha" operator="out"/>
+                             <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.4 0"/>
+                      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_808_706"/>
+                          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_808_706" result="shape"/>
+                   </filter>
+                     <clipPath id="clip0_808_706">
+                     <rect width="73" height="73" rx="36.5" fill="white"/>
+                     </clipPath>
+                          </defs>
+            </svg>
+          </div>
+        </div>
+        <div class=" flex  bg-sky-100 h-32 rounded-xl w-1/3 items-center justify-center">
+             
+        </div>
+     </div>
+
+        <!-- Shortcuts -->
+
+    <div class="grid grid-cols-3 justify-between items-center gap-4 px-1 text-xs font-bold">
+      <div class="w-28 h-28 rounded-3xl p-4 bg-white shadow-lg flex flex-col justify-center items-center gap-1"> 
+        <svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_1297_231)">
+              <path d="M13.1371 13.3003C16.132 13.3003 18.5599 10.947 18.5599 8.044C18.5599 5.14104 16.132 2.78772 13.1371 2.78772C10.1422 2.78772 7.71436 5.14104 7.71436 8.044C7.71436 10.947 10.1422 13.3003 13.1371 13.3003Z" stroke="#232441" stroke-width="2"/>
+              <path d="M28.0499 13.3003H25.3385M25.3385 13.3003H22.6271M25.3385 13.3003V10.6722M25.3385 13.3003V15.9285M23.9801 23.8129C23.9828 23.5974 23.9828 23.3779 23.9828 23.1558C23.9828 19.8904 19.1267 17.2425 13.1373 17.2425C7.14784 17.2425 2.29175 19.8904 2.29175 23.1558C2.29175 26.4213 2.29175 29.0692 13.1373 29.0692C16.1618 29.0692 18.3431 28.8629 19.9157 28.4949" stroke="#232441" stroke-width="2" stroke-linecap="round"/>
+            </g>
+            <defs>
+              <clipPath id="clip0_1297_231">
+              <rect width="28.8889" height="30" fill="white" transform="translate(0.555664 0.875)"/>
+              </clipPath>
+            </defs>
+         </svg>
+        <p> ثبت نام </p></div>
+      <div class="w-28 h-28 rounded-3xl px-4 py-6 bg-white shadow-lg flex flex-col gap- justify-center items-center gap-2"> 
+        <svg width="30" height="31" viewBox="0 0 29 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.37929 8.34821C5.12483 8.34821 4.85697 8.24106 4.66947 8.05356C4.28108 7.66517 4.28108 7.02231 4.66947 6.63392L9.53108 1.77231C9.91947 1.38392 10.5623 1.38392 10.9507 1.77231C11.3391 2.16071 11.3391 2.80356 10.9507 3.19196L6.08911 8.05356C5.88822 8.24106 5.63375 8.34821 5.37929 8.34821Z" fill="#232441"/>
+<path d="M23.6205 8.34821C23.3661 8.34821 23.1116 8.25446 22.9107 8.05356L18.0491 3.19196C17.6607 2.80356 17.6607 2.16071 18.0491 1.77231C18.4375 1.38392 19.0804 1.38392 19.4688 1.77231L24.3304 6.63392C24.7188 7.02231 24.7188 7.66517 24.3304 8.05356C24.1429 8.24106 23.875 8.34821 23.6205 8.34821Z" fill="#232441"/>
+<path d="M25.4954 14C25.4016 14 25.3079 14 25.2141 14H24.9061H3.78557C2.84807 14.0134 1.77665 14.0134 0.99986 13.2366C0.383789 12.6339 0.102539 11.6964 0.102539 10.3169C0.102539 6.63391 2.7945 6.63391 4.08022 6.63391H24.9195C26.2052 6.63391 28.8972 6.63391 28.8972 10.3169C28.8972 11.7098 28.6159 12.6339 27.9999 13.2366C27.3034 13.933 26.3659 14 25.4954 14ZM4.08022 11.9911H25.2275C25.8302 12.0044 26.3927 12.0044 26.5802 11.8169C26.674 11.7232 26.8749 11.4018 26.8749 10.3169C26.8749 8.80355 26.4999 8.64284 24.9061 8.64284H4.08022C2.48647 8.64284 2.11147 8.80355 2.11147 10.3169C2.11147 11.4018 2.32575 11.7232 2.40611 11.8169C2.59361 11.9911 3.1695 11.9911 3.75879 11.9911H4.08022Z" fill="#232441"/>
+<path d="M11.4998 24.3125C10.9507 24.3125 10.4954 23.8572 10.4954 23.3081V18.5536C10.4954 18.0045 10.9507 17.5491 11.4998 17.5491C12.0489 17.5491 12.5043 18.0045 12.5043 18.5536V23.3081C12.5043 23.8706 12.0489 24.3125 11.4998 24.3125Z" fill="#232441"/>
+<path d="M17.661 24.3125C17.1119 24.3125 16.6565 23.8572 16.6565 23.3081V18.5536C16.6565 18.0045 17.1119 17.5491 17.661 17.5491C18.2101 17.5491 18.6654 18.0045 18.6654 18.5536V23.3081C18.6654 23.8706 18.2101 24.3125 17.661 24.3125Z" fill="#232441"/>
+<path d="M18.3705 30.2723H10.2946C5.49997 30.2723 4.42854 27.4196 4.01336 24.942L2.12497 13.3571C2.03122 12.808 2.40622 12.2991 2.95533 12.2054C3.50443 12.1116 4.01336 12.4866 4.10711 13.0357L5.9955 24.6071C6.3839 26.9777 7.18747 28.2634 10.2946 28.2634H18.3705C21.8125 28.2634 22.2009 27.058 22.6428 24.7277L24.8928 13.0089C25 12.4598 25.5223 12.0982 26.0714 12.2187C26.6205 12.3259 26.9687 12.8482 26.8616 13.3973L24.6116 25.1161C24.0893 27.8348 23.2187 30.2723 18.3705 30.2723Z" fill="#232441"/>
+        </svg>
+        <p> خرید از فروشگاه  </p></div>
+      <div class="w-28 h-28 rounded-3xl px-4 py-6 bg-white shadow-lg flex flex-col gap- justify-center items-center gap-2"> 
+        <svg width="32" height="28" viewBox="0 0 32 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M31 15.0462V13.4855C31 7.60016 31 4.65669 29.242 2.82913C27.4855 1 24.6565 1 19 1H13C7.3435 1 4.5145 1 2.758 2.82913C1 4.65669 1 7.60016 1 13.4855C1 19.3709 1 22.3143 2.758 24.1419C4.5145 25.971 7.3435 25.971 13 25.971H17.5M13 19.7283H7M1 10.3641H31" stroke="#232441" stroke-width="2" stroke-linecap="round"/>
+<path d="M25.0002 25.9711C27.4855 25.9711 29.5002 23.8748 29.5002 21.289C29.5002 18.7032 27.4855 16.6069 25.0002 16.6069C22.515 16.6069 20.5002 18.7032 20.5002 21.289C20.5002 23.8748 22.515 25.9711 25.0002 25.9711Z" stroke="#232441" stroke-width="2"/>
+<path d="M28.7498 25.1906L30.2498 26.7513" stroke="#232441" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <p>  خدمات بیشتر </p></div>
+      <div class="w-28 h-28 rounded-3xl px-4 py-6 bg-white shadow-lg flex flex-col gap- justify-center items-center gap-2"> 
+        <svg width="32" height="31" viewBox="0 0 32 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.9375 29.6888C1.9375 29.6888 2.58156 26.2942 2.875 25.0013C3.07 24.1417 3.8125 22.1888 11.3125 21.2513C11.3125 21.2513 12.25 24.0638 16 24.0638C19.75 24.0638 20.6875 21.2513 20.6875 21.2513C28.1875 22.1888 28.93 24.0835 29.125 25.0013C29.4006 26.2988 30.0625 29.6888 30.0625 29.6888M10.375 10.9388C10.375 14.5632 13.1875 17.5013 16 17.5013C18.8125 17.5013 21.625 14.5632 21.625 10.9388M8.5 28.7513V29.6888M23.5 28.7513V29.6888M6.625 8.12634H22.5625C22.5625 4.50197 19.6244 1.56384 16 1.56384C12.3756 1.56384 9.4375 4.50197 9.4375 8.12634" stroke="#232441" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <p> مربیان باشگاه  </p></div>
+      <div class="w-28 h-28 rounded-3xl px-4 py-6 bg-white shadow-lg flex flex-col gap- justify-center items-center gap-2"> 
+        <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_1297_248)">
+<path d="M4.25 28.2263H29.25C29.555 28.2263 29.8475 28.3475 30.0632 28.5632C30.2788 28.7788 30.4 29.0713 30.4 29.3763C30.4 29.6813 30.2788 29.9739 30.0632 30.1895C29.8475 30.4052 29.555 30.5263 29.25 30.5263H4.25C3.28196 30.5263 2.35357 30.1418 1.66906 29.4573C0.984552 28.7728 0.6 27.8444 0.6 26.8763V1.87634C0.6 1.57134 0.72116 1.27884 0.936827 1.06317C1.15249 0.847503 1.445 0.726343 1.75 0.726343C2.055 0.726343 2.34751 0.847503 2.56317 1.06317C2.77884 1.27884 2.9 1.57134 2.9 1.87634V26.8763C2.9 27.2344 3.04223 27.5778 3.29541 27.8309C3.54858 28.0841 3.89196 28.2263 4.25 28.2263Z" fill="#232441" stroke="#232441" stroke-width="0.2"/>
+<path d="M20.0634 25.1903C19.8478 25.406 19.5553 25.5271 19.2503 25.5271C18.9452 25.5271 18.6527 25.406 18.4371 25.1903C18.2214 24.9746 18.1002 24.6821 18.1002 24.3771V15.6271C18.1002 15.3221 18.2214 15.0296 18.4371 14.814C18.6527 14.5983 18.9452 14.4771 19.2503 14.4771C19.5553 14.4771 19.8478 14.5983 20.0634 14.814C20.2791 15.0296 20.4003 15.3221 20.4003 15.6271V24.3771C20.4003 24.6821 20.2791 24.9746 20.0634 25.1903Z" fill="#232441" stroke="#232441" stroke-width="0.2"/>
+<path d="M10.0632 25.1903C9.8475 25.406 9.555 25.5271 9.25 25.5271C8.945 25.5271 8.65249 25.406 8.43683 25.1903C8.22116 24.9746 8.1 24.6821 8.1 24.3771V15.6271C8.1 15.3221 8.22116 15.0296 8.43683 14.814C8.65249 14.5983 8.945 14.4771 9.25 14.4771C9.555 14.4771 9.8475 14.5983 10.0632 14.814C10.2788 15.0296 10.4 15.3221 10.4 15.6271V24.3771C10.4 24.6821 10.2788 24.9746 10.0632 25.1903Z" fill="#232441" stroke="#232441" stroke-width="0.2"/>
+<path d="M25.0632 25.1895C24.8475 25.4052 24.555 25.5263 24.25 25.5263C23.945 25.5263 23.6525 25.4052 23.4368 25.1895C23.2212 24.9739 23.1 24.6813 23.1 24.3763V9.37634C23.1 9.07134 23.2212 8.77884 23.4368 8.56317C23.6525 8.3475 23.945 8.22634 24.25 8.22634C24.555 8.22634 24.8475 8.3475 25.0632 8.56317C25.2789 8.77884 25.4 9.07134 25.4 9.37634V24.3763C25.4 24.6813 25.2789 24.9739 25.0632 25.1895Z" fill="#232441" stroke="#232441" stroke-width="0.2"/>
+<path d="M15.0629 25.1895C14.8473 25.4052 14.5548 25.5263 14.2498 25.5263C13.9448 25.5263 13.6523 25.4052 13.4366 25.1895C13.2209 24.9738 13.0998 24.6813 13.0998 24.3763V9.37634C13.0998 9.07134 13.2209 8.77884 13.4366 8.56317C13.6523 8.3475 13.9448 8.22634 14.2498 8.22634C14.5548 8.22634 14.8473 8.3475 15.0629 8.56317C15.2786 8.77884 15.3998 9.07134 15.3998 9.37634V24.3763C15.3998 24.6813 15.2786 24.9738 15.0629 25.1895Z" fill="#232441" stroke="#232441" stroke-width="0.2"/>
+</g>
+<defs>
+<clipPath id="clip0_1297_248">
+<rect width="30" height="30" fill="white" transform="translate(0.5 0.626343)"/>
+</clipPath>
+</defs>
+        </svg>
+
+        <p> پیشرفت فیزیکی  </p></div>
+      <div class="w-28 h-28 rounded-3xl px-4 py-6 bg-white shadow-lg flex flex-col gap- justify-center items-center gap-2"> 
+        <svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_1297_502)">
+<path d="M28.7585 14.6899L25.3649 18.0835L19.8376 12.5562L19.6962 12.4148L19.5548 12.5562L11.9298 20.1812L11.7884 20.3226L11.9297 20.464L17.4571 25.9926L14.0635 29.3862L14.0635 29.3862C13.7338 29.7159 13.3425 29.9774 12.9117 30.1559C12.481 30.3343 12.0193 30.4262 11.5531 30.4262C11.0868 30.4262 10.6251 30.3343 10.1944 30.1559C9.76365 29.9774 9.37227 29.7159 9.04261 29.3862L9.0426 29.3862L6.0251 26.3687L5.88368 26.2273L5.74226 26.3687L3.38368 28.7273L1.89902 27.2426L4.2576 24.884L4.39899 24.7426L4.25763 24.6012L1.24013 21.5825L1.09868 21.7239L1.24012 21.5825C0.574602 20.9167 0.200732 20.0139 0.200732 19.0726C0.200732 18.1313 0.574602 17.2285 1.24012 16.5627L4.6337 13.1692L10.1623 18.6965L10.3037 18.8379L10.4451 18.6965L18.0701 11.0715L18.2115 10.9301L18.0701 10.7887L12.5428 5.26012L15.9364 1.86652L15.9364 1.86651C16.266 1.5368 16.6574 1.27525 17.0881 1.09681C17.5189 0.918369 17.9806 0.826526 18.4468 0.826526C18.913 0.826526 19.3747 0.918369 19.8055 1.09681C20.2362 1.27525 20.6276 1.5368 20.9572 1.86651L20.9573 1.86652L23.9748 4.88402L24.1162 5.02544L24.2576 4.88402L26.6162 2.52544L28.1008 4.0101L25.7423 6.36868L25.6009 6.51007L25.7422 6.65149L28.4185 9.32885H28.4172L28.7585 9.67025C29.424 10.336 29.7979 11.2388 29.7979 12.1801C29.7979 13.1214 29.424 14.0242 28.7585 14.6899C28.7585 14.6899 28.7585 14.6899 28.7585 14.6899ZM10.9978 28.2162L11.0744 28.0314L10.9978 28.2162C11.1738 28.2891 11.3625 28.3267 11.5531 28.3267C11.7436 28.3267 11.9323 28.2891 12.1083 28.2162L12.0317 28.0314C12.1835 27.9685 12.3213 27.8763 12.4374 27.7601L12.5789 27.9015L12.5789 27.9014L14.3464 26.134L14.4878 25.9926L14.3464 25.8512L4.7751 16.2799L4.63368 16.1385L4.49226 16.2799L2.72476 18.0474L2.72474 18.0475C2.45291 18.3194 2.3002 18.6881 2.3002 19.0726C2.3002 19.4571 2.45291 19.8258 2.72474 20.0977L2.72475 20.0978L10.5272 27.9014C10.5272 27.9015 10.5272 27.9015 10.5272 27.9015C10.6619 28.0363 10.8218 28.1432 10.9978 28.2162ZM27.2752 13.204L27.2752 13.2039C27.5466 12.932 27.699 12.5636 27.699 12.1795C27.699 11.7953 27.5466 11.4269 27.2752 11.155L27.2751 11.1549L19.4727 3.35126C19.338 3.21644 19.1781 3.10949 19.0021 3.03652C18.826 2.96355 18.6374 2.92599 18.4468 2.92599C18.2563 2.92599 18.0676 2.96355 17.8915 3.03652C17.7155 3.10948 17.5557 3.2164 17.421 3.35118C17.421 3.3512 17.421 3.35123 17.4209 3.35126L15.6535 5.11868L15.5121 5.2601L15.6535 5.40152L25.2248 14.9728L25.3662 15.1142L25.5077 14.9727L27.2752 13.204Z" fill="#232441" stroke="#232441" stroke-width="0.4"/>
+</g>
+<defs>
+<clipPath id="clip0_1297_502">
+<rect width="30" height="30" fill="white" transform="translate(0 0.626343)"/>
+</clipPath>
+</defs>
+        </svg>
+        <p> Gym lab  </p></div>
+    </div>
+    <div>
+      <img class="rounded-3xl my-6" src="../assets/images/home-pic-01.jpg" alt="Chest and Arms Picture">
+    </div>
+ 
+     </div>
+    <!-- footer section  -->
+     <footer
+       class="w-full bg-white flex  items-center justify-between font-medium text-smartgymsecodary pb-4 pt-1 md:hidden lg:hidden xl:hidden fixed bottom-0 left-0 right-0"
        >
        <div class="flex  gap-8 pt-1 pr-6 pb-1 pl-2">
+        <a href="../public/scan.html">
           <div class="flex flex-col gap- justify-center place-items-center gap-1">
            <svg
              width="30"
@@ -149,6 +265,7 @@
            </svg>
            <p>اسکن</p>
           </div>
+        </a>
           <div class="flex flex-col justify-center items-center gap-1">
             <svg
              width="30"
@@ -167,7 +284,7 @@
         </div>
      
         <div class="relative flex flex-col justify-center items-center item">
-          <div class="absolute rounded-full bg-gray-200 p-4 text-center -top-12 shadow-xl shadow-slate-400">
+          <div class="absolute rounded-full bg-smartgymyellow p-4 text-center -top-12 shadow-lg shadow-slate-500">
              <svg
               width="54"
               height="54"
@@ -181,10 +298,10 @@
               />
              </svg>
           </div>
-          <p class="mt-12 text-smartgymprimary"> خانه </p>
+          <p class="mt-10 text-smartgymprimary"> خانه </p>
         </div>
         <div
-          class="flex  gap-8 justify-center items-center pt-1 pr-2 pb-1 pl-6 border-0 "
+          class="flex  gap-8 justify-center items-center pt-1 pr-2 pb-1 pl-6 border-0"
          >
            <div class="flex flex-col justify-center items-center gap-1">
              <svg
@@ -229,7 +346,6 @@
               <p class="">پروفایل</p>
            </div>
         </div>
-    </footer>
-    
-  </body>
+     </footer>
+   </body>
 </html>
