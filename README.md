@@ -1,5 +1,5 @@
-Smart Gym 
+Smart Gym App
 
-Weight measurement form with Tailwind.
+with Tailwind
 
 by: Moji 
