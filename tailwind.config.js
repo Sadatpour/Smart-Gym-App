@@ -15,6 +15,7 @@ module.exports = {
         smartgymprimarydark: "#19192E",
         smartgymsecodary: "#52559f",
         smartgymyellow: "#e7fe58",
+        smartgymbgfreeze: "rgba(90, 90, 90, 0.06)",
       },
     },
   },
